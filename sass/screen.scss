@@ -6,7 +6,43 @@
 
 @import "compass";
 
+$oranje: #fc4c1b;
+$wit: #ededed;
+
 body {
-  background: url(../images/background.jpg) center;
+  margin: 8px;
+  font-family: HelveticaNeue, Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", FreeSans, Sans-serif;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/background.compressed.jpg) center;
   background-size: cover;
+  opacity: 0.8;
+  overflow: auto;
+
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: $oranje;
+  text-align: center;
+  // text-indent: -.12em;
+  font-weight: 900;
+  margin: 0;
+  line-height: 100%;
+}
+
+h1 span {
+  border-bottom: 3px solid $wit;
 }
