@@ -9,8 +9,15 @@
 $oranje: #fc4c1b;
 $wit: #ededed;
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  margin: 8px;
+  text-align: center;
+  color: $wit;
   font-family: HelveticaNeue, Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", FreeSans, Sans-serif;
 }
 
@@ -20,7 +27,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../images/background.compressed.jpg) center;
+  background: url(../images/background.jpg) center;
   background-size: cover;
   opacity: 0.8;
   overflow: auto;
@@ -28,21 +35,90 @@ body {
 }
 
 .container {
-  position: relative;
-  width: 80%;
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.headlines {
+  width: 70%;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-h1 {
-  color: $oranje;
-  text-align: center;
-  // text-indent: -.12em;
-  font-weight: 900;
-  margin: 0;
-  line-height: 100%;
+hr {
+  border: 0;
+  height: 3px;
+  background-color: $wit;
+  margin: 1em 0;
+
+  // @media (min-width: 600px) {
+  //   height: 5px;
+  // }
 }
 
-h1 span {
-  border-bottom: 3px solid $wit;
+h1 {
+  // @media (min-width: 600px) {
+  //   padding: 0 15%;
+  // }
 }
+
+h1 img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 2rem 0;
+  letter-spacing: 0.05rem;
+}
+
+h2 span {
+  background-color: $oranje;
+  color: $wit;
+  display: inline-block;
+  padding: 0px 4px 4px 4px;
+  // @media (min-width: 600px) {
+  //   padding: 0px 8px 8px 8px;
+  // }
+}
+
+.links {
+  @include pie-clearfix;
+}
+
+a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: $wit;
+  border: 3px solid $wit;
+  margin: 10px;
+
+  // @media (min-width: 600px) {
+  //   border-width: 6px;
+  //   margin: 20px;
+  // }
+
+  display: inline-block;
+
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 80px;
+}
+
+a:hover {
+  color: $oranje;
+  border-color: $oranje;
+}
+
+

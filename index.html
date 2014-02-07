@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <title>cntrl</title>
   <link href="stylesheets/normalize.css" rel="stylesheet" type="text/css">
+  <link href="stylesheets/icons.css" rel="stylesheet" type="text/css">
   <link href="stylesheets/screen.css" rel="stylesheet" type="text/css">
   <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css">
-  <!--[if IE]>
-    <link href="stylesheets/ie.css" rel="stylesheet" type="text/css">
-  <![endif]-->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 <body>
 
   <div class="background"></div>
-  <div class="container">
-    <h1><span>cntrl</span></h1>
-  </div>
 
+  <div class="container"><div class="inner">
 
+    <div class="headlines">
+      <h1><img src="images/cntrl.svg"></h1>
+      <hr>
+      <h2><span>digital agency.</span></h2>
+    </div>
+
+    <div class="links">
+      <a href="//twitter.com/blackboxshots" class="icon-twitter"></a>
+      <a href="//facebook.com/blackboxshots" class="icon-facebook"></a>
+      <a href="//linkedin.com/in/blackboxshots" class="icon-linkedin"></a>
+      <a href="//instagram.com/blackboxshots" class="icon-instagramm"></a>
+    </div>
+
+  </div></div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="javascript/jquery.lettering.js"></script>
   <script src="javascript/jquery.fittext.js"></script>
   <script>
-
+    $("body").on("touchmove", false);
     $(document).ready(function() {
-      $("h1").fitText(0.35);
+      $("h2").fitText(1.3);
     });
-
   </script>
 
 </body>
