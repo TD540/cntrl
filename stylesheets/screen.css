@@ -40,9 +40,12 @@ body {
 }
 
 .headlines {
-  width: 70%;
-  max-width: 1440px;
+  width: 80%;
   margin: 0 auto;
+}
+
+@media (min-width:800px) {
+  .headlines { width: 50%;}
 }
 
 hr {
@@ -55,6 +58,8 @@ hr {
 h1 img {
   width: 100%;
   height: auto;
+  -webkit-transition: width 0.2s, height 0.2s;
+  transition: width 0.2s, height 0.2s;
 }
 
 h2 {
@@ -75,10 +80,10 @@ h2 span {
   font-size: 3rem;
   color: #ededed;
   margin: 5px;
-  -webkit-transition: font-size 0.2s;
-  transition: font-size 0.2s;
+  -webkit-transition: font-size 0.2s, color 0.4s;
+  transition: font-size 0.2s, color 0.4s;
 }
-@media (min-width:640px) {
+@media (min-width:641px) {
   .links a { font-size: 6rem; }
 }
 
