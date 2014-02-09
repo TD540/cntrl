@@ -70,27 +70,20 @@ h2 span {
   padding: 0px 4px 4px 4px;
 }
 
-.links {
-  *zoom: 1;
-}
-.links:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-a {
+.links a {
   text-decoration: none;
   font-size: 3rem;
   color: #ededed;
-  border: 3px solid #ededed;
-  margin: 10px;
-  display: inline-block;
-  text-align: center;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  border-radius: 80px;
+  margin: 5px;
+  -webkit-transition: font-size 0.2s;
+  transition: font-size 0.2s;
+}
+@media (min-width:640px) {
+  .links a { font-size: 6rem; }
+}
+
+.links a span {
+  display: none;
 }
 
 a:hover {
